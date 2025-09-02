@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Pretendard GOV';
+  src: url('@assets/fonts/pretendardGov/PretendardGOVVariable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@layer base {
+  body {
+    font-family:
+      'Pretendard GOV',
+      -apple-system,
+      BlinkMacSystemFont,
+      'Apple SD Gothic Neo',
+      'Noto Sans KR',
+      'Malgun Gothic',
+      '맑은 고딕',
+      sans-serif;
+  }
+}
