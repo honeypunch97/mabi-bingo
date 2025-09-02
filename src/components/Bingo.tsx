@@ -61,7 +61,7 @@ const BingoItem = memo(
           }}
         >
           {/* 앞면 */}
-          <div className='absolute inset-0 flex items-center justify-center rounded-md border bg-sky-100 text-lg font-medium transition-colors backface-hidden hover:bg-sky-200'>
+          <div className='absolute inset-0 flex items-center justify-center rounded-md border bg-sky-100 p-2 text-lg font-medium transition-colors backface-hidden hover:bg-sky-200'>
             {item.text}
           </div>
 
