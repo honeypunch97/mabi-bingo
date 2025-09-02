@@ -11,7 +11,7 @@ interface BingoProps {
 
 const Bingo = memo(({ data, backgroundImage }: BingoProps) => {
   return (
-    <div className='grid aspect-square w-full grid-cols-5 grid-rows-5 gap-2'>
+    <div className='grid aspect-square w-full grid-cols-5 grid-rows-5 gap-1 md:gap-2'>
       {data.map((item, index) => (
         <BingoItem
           key={item.id}
@@ -61,7 +61,7 @@ const BingoItem = memo(
           }}
         >
           {/* 앞면 */}
-          <div className='absolute inset-0 flex items-center justify-center rounded-md border bg-sky-100 p-2 text-lg font-medium transition-colors backface-hidden hover:bg-sky-200'>
+          <div className='font-medium/6 absolute inset-0 flex items-center justify-center rounded-md border bg-sky-100 p-1 text-xs leading-3 transition-colors backface-hidden hover:bg-sky-200 md:p-2 md:text-lg md:leading-8'>
             {item.text}
           </div>
 
